@@ -196,6 +196,28 @@ export const mainProjects: Project[] = [
     liveUrl: "",
     category: "Professional",
   },
+  {
+    id: 11,
+    name: "Simple Blog",
+    slug: "simple-blog",
+    shortDescription: "Web blog platform built during internship for sharing personal stories",
+    description:
+      "Developed a web blog project during an internship, enabling users to share personal stories and authentic narratives.",
+    longDescription:
+      "A full-stack blog platform built during the Designveloper internship, allowing users to write, publish, and share personal stories and authentic narratives. Implemented the frontend with ReactJS and built a RESTful API backend with ExpressJS, backed by MongoDB for data persistence.",
+    period: "June 2022 - July 2022",
+    status: "Completed",
+    technologies: [{ name: "React", icon: "FaReact" }, { name: "Express.js" }, { name: "MongoDB" }],
+    highlights: [
+      "Full-stack blog platform (ReactJS + ExpressJS + MongoDB)",
+      "User-generated personal stories and narratives",
+      "RESTful API design",
+    ],
+    image: "/images/projects/simple-blog.jpg",
+    github: "",
+    liveUrl: "",
+    category: "Professional",
+  },
 ];
 
 export const vibeProjects: Project[] = [

@@ -11,6 +11,7 @@ export const skillsData: { categories: SkillCategory[] } = {
         { name: "Next.js", icon: "SiNextdotjs" },
         { name: "Angular 16-19", icon: "FaAngular" },
         { name: "RxJS" },
+        { name: "Axios" },
       ],
     },
     {
@@ -41,6 +42,7 @@ export const skillsData: { categories: SkillCategory[] } = {
         { name: "Feature-Sliced Design (FSD)" },
         { name: "Component-Driven Architecture" },
         { name: "Performance Optimization" },
+        { name: "Advanced State Management" },
         { name: "Web Accessibility (a11y)" },
       ],
     },
@@ -62,7 +64,6 @@ export const skillsData: { categories: SkillCategory[] } = {
         { name: "Git", icon: "FaGitAlt" },
         { name: "Docker", icon: "FaDocker" },
         { name: "Trivy (Security Scanning)" },
-        { name: "CI/CD" },
       ],
     },
     {
@@ -70,7 +71,7 @@ export const skillsData: { categories: SkillCategory[] } = {
       level: "Advanced",
       skills: [
         { name: "OOP" },
-        { name: "Design Patterns" },
+        { name: "Design Patterns (Builder, Facade, Observer)" },
         { name: "Data Structures & Algorithms" },
         { name: "Agile/Scrum" },
       ],
