@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiArrowDown, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { personalInfo } from "@/lib/data/personalInfo";
@@ -31,9 +32,16 @@ export function Hero() {
           initial="hidden"
           animate="show"
           custom={1}
-          className="gradient-border glass-strong relative flex h-28 w-28 items-center justify-center rounded-full sm:h-36 sm:w-36"
+          className="gradient-border glass-strong relative flex h-28 w-28 items-center justify-center overflow-hidden !rounded-full sm:h-36 sm:w-36"
         >
-          <span className="gradient-text text-4xl font-bold sm:text-5xl">{personalInfo.initials}</span>
+          <Image
+            src={personalInfo.profileImage}
+            alt={personalInfo.fullName}
+            fill
+            priority
+            sizes="(min-width: 640px) 144px, 112px"
+            className="rounded-full "
+          />
         </motion.div>
 
         <motion.h1

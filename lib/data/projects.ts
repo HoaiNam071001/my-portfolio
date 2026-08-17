@@ -161,7 +161,7 @@ export const mainProjects: Project[] = [
       "Active usage across projects",
     ],
     image: "/images/projects/skeleton-styler.jpg",
-    github: "https://github.com/hoainam07/skeleton-styler",
+    github: "https://github.com/HoaiNam071001/skeleton-styler",
     npm: "skeleton-styler",
     liveUrl: "https://www.npmjs.com/package/skeleton-styler",
     category: "Professional",
@@ -221,6 +221,36 @@ export const mainProjects: Project[] = [
 ];
 
 export const vibeProjects: Project[] = [
+  {
+    id: 12,
+    name: "Diary Calendar",
+    slug: "diary-calendar",
+    shortDescription: "Vietnamese lunar–solar calendar with an integrated personal diary",
+    description:
+      "A Vietnamese perpetual calendar (lịch vạn niên) for looking up lunar dates, can chi, tiết khí and holidays, combined with a personal diary for daily journaling.",
+    longDescription:
+      "A calendar app built for Vietnamese users: view lunar dates alongside the solar month, convert between âm lịch and dương lịch, and look up can chi, tiết khí, giờ hoàng đạo, domestic and international holidays, plus a countdown to Tết — all working offline. On top of the calendar sits a personal diary where entries are written per day with moods, categories and hashtags, then browsed by month, searched, filtered and viewed as list or grid with basic statistics. Covers lookups from 1900 to 2100 with light/dark themes and global search.",
+    period: "2026",
+    status: "Active",
+    technologies: [
+      { name: "Next.js", icon: "SiNextdotjs" },
+      { name: "React", icon: "FaReact" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+    ],
+    highlights: [
+      "Lunar–solar date conversion covering 1900–2100",
+      "Can chi, tiết khí, giờ hoàng đạo and holiday lookups",
+      "Countdown to Tết and other Vietnamese events",
+      "Personal diary with moods, categories and hashtags",
+      "Monthly browsing, search, filters and list/grid views",
+      "Offline support, dark mode and global search",
+    ],
+    image: "/images/projects/diary-calendar.jpg",
+    github: "",
+    liveUrl: "https://viet-cal.vercel.app",
+    category: "Vibe",
+  },
   {
     id: 7,
     name: "English Master",

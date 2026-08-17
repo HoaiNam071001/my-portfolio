@@ -7,7 +7,7 @@ export const siteConfig = {
   email: "namhn077@gmail.com",
 
   social: {
-    github: "https://github.com/hoainam07",
+    github: "https://github.com/HoaiNam071001",
     linkedin: "https://linkedin.com/in/hoainam07",
     twitter: "",
     instagram: "",
@@ -29,7 +29,6 @@ export const siteConfig = {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
-    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ],
 

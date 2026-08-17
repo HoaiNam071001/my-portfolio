@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "./theme-toggle";
@@ -12,7 +13,6 @@ const links = [
   { name: "Home", href: ROUTES.HOME },
   { name: "About", href: ROUTES.ABOUT },
   { name: "Projects", href: ROUTES.PROJECTS },
-  { name: "Blog", href: ROUTES.BLOG },
   { name: "Contact", href: ROUTES.CONTACT },
 ];
 
@@ -41,9 +41,19 @@ export function Navbar() {
           scrolled ? "shadow-lg shadow-black/5" : ""
         }`}
       >
-        <Link href={ROUTES.HOME} className="text-sm font-bold tracking-tight text-foreground">
-          <span className="gradient-text">{personalInfo.initials}</span>
-          <span className="ml-2 hidden text-foreground/80 sm:inline">{personalInfo.fullName}</span>
+        <Link
+          href={ROUTES.HOME}
+          className="flex items-center gap-2 text-sm font-bold tracking-tight text-foreground"
+        >
+          <Image
+            src={personalInfo.logo}
+            alt={personalInfo.fullName}
+            width={32}
+            height={32}
+            priority
+            className="h-8 w-8 rounded-full"
+          />
+          <span className="hidden text-foreground/80 sm:inline">{personalInfo.fullName}</span>
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">

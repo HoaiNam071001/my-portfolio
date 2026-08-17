@@ -6,7 +6,7 @@ const items = [
   { icon: FiMail, label: "Email", value: personalInfo.email, href: personalInfo.socialLinks.email },
   { icon: FiPhone, label: "Phone", value: personalInfo.phone, href: personalInfo.socialLinks.phone },
   { icon: FiMapPin, label: "Location", value: personalInfo.location, href: undefined },
-  { icon: FiGithub, label: "GitHub", value: "@hoainam07", href: personalInfo.socialLinks.github },
+  { icon: FiGithub, label: "GitHub", value: "@HoaiNam071001", href: personalInfo.socialLinks.github },
   { icon: FiLinkedin, label: "LinkedIn", value: "in/hoainam07", href: personalInfo.socialLinks.linkedin },
 ];
 
