@@ -1,7 +1,7 @@
 export const siteConfig = {
   siteName: "Nguyễn Hoài Nam Portfolio",
   siteDescription: "Frontend Developer Portfolio - React, Angular, Next.js",
-  siteUrl: "https://hoainam-portfolio.vercel.app",
+  siteUrl: "https://portfolio-hoainam.vercel.app",
 
   author: "Nguyễn Hoài Nam",
   email: "namhn077@gmail.com",

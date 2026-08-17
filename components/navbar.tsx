@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { ThemeToggle } from "./theme-toggle";
 import { personalInfo } from "@/lib/data/personalInfo";
 import { ROUTES } from "@/lib/constants/routes";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiDownload, FiMenu, FiX } from "react-icons/fi";
 
 const links = [
   { name: "Home", href: ROUTES.HOME },
@@ -74,6 +74,14 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
+          <a
+            href={personalInfo.resumeUrl}
+            download={personalInfo.resumeFileName}
+            className="hidden items-center gap-2 rounded-full bg-primary/15 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/25 md:inline-flex"
+          >
+            <FiDownload size={15} />
+            CV
+          </a>
           <ThemeToggle />
           <button
             type="button"
@@ -99,6 +107,15 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
+          <a
+            href={personalInfo.resumeUrl}
+            download={personalInfo.resumeFileName}
+            onClick={() => setOpen(false)}
+            className="mt-1 flex items-center gap-2 rounded-2xl bg-primary/15 px-4 py-3 text-sm font-medium text-primary"
+          >
+            <FiDownload size={15} />
+            {personalInfo.cta.resume}
+          </a>
         </div>
       )}
     </header>

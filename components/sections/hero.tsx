@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FiArrowDown, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiArrowDown, FiDownload, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { personalInfo } from "@/lib/data/personalInfo";
 import { ROUTES } from "@/lib/constants/routes";
 
@@ -90,6 +90,14 @@ export function Hero() {
           >
             {personalInfo.cta.secondary}
           </Link>
+          <a
+            href={personalInfo.resumeUrl}
+            download={personalInfo.resumeFileName}
+            className="btn-secondary glass inline-flex items-center gap-2 px-7 py-3 text-sm text-foreground hover:text-primary"
+          >
+            <FiDownload size={16} />
+            {personalInfo.cta.resume}
+          </a>
         </motion.div>
 
         <motion.div

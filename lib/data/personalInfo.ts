@@ -10,6 +10,8 @@ export const personalInfo = {
   profileImage: "/my-profile.png",
   logo: "/icon.svg",
   yearsExperience: 4,
+  resumeUrl: "/Nguyen-Hoai-Nam-CV.pdf",
+  resumeFileName: "Nguyen-Hoai-Nam-Frontend-Developer.pdf",
 
   socialLinks: {
     github: "https://github.com/HoaiNam071001",
@@ -21,5 +23,6 @@ export const personalInfo = {
   cta: {
     primary: "View My Work",
     secondary: "Get In Touch",
+    resume: "Download CV",
   },
 };

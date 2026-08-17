@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nguyen Hoai Nam - Frontend Developer CV</title>
+<style>
+  @page {
+    size: A4;          /* 210mm x 297mm */
+    margin: 0;         /* page padding is handled by .page so print matches screen */
+  }
+
+  :root {
+    --ink: #101010;
+    --muted: #4a4a4a;
+    --rule: #c9c9c9;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { background: #e9e9e9; }
+
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI", sans-serif;
+    font-size: 9.3pt;
+    line-height: 1.38;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 12mm 14mm;
+    margin: 10mm auto;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .18);
+  }
+
+  /* ---------- header ---------- */
+  h1 {
+    font-size: 30pt;
+    line-height: 1.05;
+    letter-spacing: -.5pt;
+    margin: 0 0 6pt;
+    font-weight: 800;
+  }
+
+  .contact {
+    color: var(--muted);
+    font-size: 9.4pt;
+  }
+
+  .contact span { white-space: nowrap; }
+
+  .contact .sep {
+    padding: 0 5pt;
+    color: #9a9a9a;
+    font-weight: 700;
+  }
+
+  .summary {
+    margin: 9pt 0 0;
+    text-align: justify;
+    color: #2a2a2a;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 10pt 0;
+  }
+
+  /* ---------- sections ---------- */
+  h2 {
+    font-size: 13pt;
+    font-weight: 800;
+    letter-spacing: .2pt;
+    margin: 0 0 6pt;
+  }
+
+  .two-col {
+    display: flex;
+    gap: 14mm;
+  }
+
+  .two-col > div:first-child { flex: 1 1 auto; }
+  .two-col > div:last-child { flex: 0 0 46mm; }
+
+  .school { font-weight: 700; }
+  .meta { color: var(--muted); }
+
+  ul {
+    margin: 3pt 0 0;
+    padding-left: 13pt;
+  }
+
+  li { margin: 0 0 1.8pt; }
+
+  li::marker { color: #777; }
+
+  .skills li { margin-bottom: 3pt; }
+
+  /* ---------- entries ---------- */
+  .entry { margin-bottom: 7.5pt; }
+
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8pt;
+  }
+
+  .role {
+    font-size: 11pt;
+    font-weight: 700;
+  }
+
+  .where {
+    font-size: 9.4pt;
+    font-weight: 700;
+    letter-spacing: .6pt;
+    white-space: nowrap;
+  }
+
+  .proj-name {
+    font-size: 10.6pt;
+    font-weight: 700;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: .5pt solid #999;
+  }
+
+  .tech { color: #2a2a2a; }
+
+  @media print {
+    html { background: #fff; }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      min-height: 0;
+      margin: 0;
+      padding: 12mm 14mm;
+      overflow: hidden;
+      box-shadow: none;
+      break-after: page;
+      page-break-after: always;
+    }
+    .page:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page">
+
+  <h1>NGUYEN HOAI NAM</h1>
+
+  <div class="contact">
+    <span>namhn077@gmail.com</span><span class="sep">|</span><span>zalo: 0336227712</span><span class="sep">|</span><span>Ho Chi Minh City</span><br />
+    <span><a href="https://portfolio-hoainam.vercel.app">portfolio-hoainam.vercel.app</a></span><span class="sep">|</span><span><a href="https://linkedin.com/in/hoainam07">linkedin.com/in/hoainam07</a></span><span class="sep">|</span><span><a href="https://github.com/HoaiNam071001">github.com/HoaiNam071001</a></span>
+  </div>
+
+  <hr />
+
+  <p class="summary">
+    Proactive Frontend Developer with 4 years of experience architecting and optimizing scalable web applications in
+    React and Angular. Proven ability to lead feature development, foster cross-functional communication, and deliver
+    high-performance solutions in complex domains (ERP, Public Transport). Author of an open-source npm library
+    (skeleton-styler). Passionate about minimizing technical debt and crafting seamless user experiences.
+  </p>
+
+  <hr />
+
+  <div class="two-col">
+    <div>
+      <h2>EDUCATION</h2>
+      <div class="school">Ho Chi Minh City University of Technology - VNU HCM</div>
+      <div class="meta">Major: Computer science &nbsp;&nbsp; GPA: 7.5 / 10</div>
+    </div>
+    <div>
+      <h2>CERTIFICATIONS</h2>
+      <div class="meta">Toeic: 585</div>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2>SKILLS</h2>
+  <ul class="skills">
+    <li><strong>Frameworks &amp; Libraries:</strong> ReactJS (19), NextJS, Angular (16 - 19), RxJS, Axios.</li>
+    <li><strong>State Management:</strong> Redux Toolkit, NgRx, Jotai, Context API.</li>
+    <li><strong>UI &amp; Styling:</strong> Tailwind CSS, Bootstrap, Material UI, SASS/SCSS, ng-zorro.</li>
+    <li><strong>Architecture &amp; Core Skills:</strong> Feature-Sliced Design (FSD), Component-Driven Architecture,
+      Performance Optimization, Advanced State Management, Web Accessibility</li>
+    <li><strong>Backend &amp; Databases:</strong> NodeJS, ExpressJS, NestJS, MongoDB, PostgreSQL.</li>
+    <li><strong>Tools &amp; DevOps:</strong> Git, Docker, Trivy (security scanning).</li>
+    <li><strong>Software Engineering:</strong> Data Structures and Algorithms, OOP, Design Patterns (Builder, Facade,
+      Observer), Agile/Scrum.</li>
+  </ul>
+
+  <hr />
+
+  <h2>EXPERIENCE</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="role">Frontend developer</span>
+      <span class="where">VinSmart Future | Dec 2025 - Now</span>
+    </div>
+    <ul>
+      <li>Developed web interfaces for bus management systems within the group's public transport ecosystem.</li>
+      <li>Spearheaded the migration of enterprise platforms (Vinbus Dashboard, Map) from Angular 11 to 19, resolving
+        critical security vulnerabilities (Trivy) and ensuring system compliance.</li>
+      <li>Contributed to the deployment of smart software solutions for passenger services and public transport
+        coordination.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="role">Frontend developer</span>
+      <span class="where">Golabs | Aug 2025 - Nov 2025</span>
+    </div>
+    <ul>
+      <li>Developed and enhanced the web UI for a bus management system, focusing on new features and user experience.</li>
+      <li>Maintained, refactored, and debugged system features to ensure high availability and stability.</li>
+      <li>Researched and applied new techniques to optimize system performance and efficiency.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="role">Frontend developer</span>
+      <span class="where">Xperc | Sep 2022 - Aug 2025</span>
+    </div>
+    <ul>
+      <li>Developed responsive web interfaces for a commercial resource and personnel management system.</li>
+      <li>Architected and built a library of highly reusable UI components, accelerating development cycles and ensuring
+        visual consistency across the platform.</li>
+      <li>Applied advanced software design patterns to architect complex features—such as implementing global
+        application skeleton loaders and dynamic dashboard reordering logic—significantly reducing bug rates and
+        enhancing code maintainability.</li>
+      <li>Collaborated closely with cross-functional teams in Agile/Scrum environments, driving clear communication,
+        daily stand-ups, and successful sprint deliveries.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="role">Intern</span>
+      <span class="where">Designveloper | June 2022 - Aug 2022</span>
+    </div>
+    <ul>
+      <li>Researched and developed a technology-based blog project independently.</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page">
+
+  <h2>PROJECTS</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="proj-name">Vinbus - MiniApp</span>
+      <span class="where">Oct 2025 - Present</span>
+    </div>
+    <ul>
+      <li>Developed a Mini App on the React 19 platform, integrated into Vingroup's V-app Super App via the
+        @vsf-miniapp framework. Built interactive maps and navigation features leveraging GSM Map SDK for real-time
+        route searching and public transport trip planning.</li>
+      <li>Managed complex application states with Jotai and optimized UI/UX using the self-authored skeleton-styler
+        library.</li>
+      <li class="tech">Technologies: React 19, @vsf-miniapp, gsm-map-sdk, TypeScript, Jotai, skeleton-styler.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="proj-name">GoAFC</span>
+      <span class="where">Aug 2025 - Present</span>
+    </div>
+    <ul>
+      <li>Modernized the Web UI for the Ho Chi Minh City bus management system, upgrading the stack to Angular 19.</li>
+      <li>Implemented key features including global search, dark mode, and an administrative dashboard for route
+        management.</li>
+      <li class="tech">Technologies: Angular 19, TypeScript, RxJS, Bootstrap, ng-zorro.</li>
+      <li>Website: <a href="https://afc.golabs.vn">afc.golabs.vn</a></li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="proj-name">Vinbus &amp; BusMap Modernization</span>
+      <span class="where">Dec 2025 - Jan 2026</span>
+    </div>
+    <ul>
+      <li>Spearheaded the comprehensive migration of multiple enterprise platforms (Vinbus Dashboard, Vinbus Map, and
+        BusMap) from Angular 11 to Angular 19. Resolved critical security vulnerabilities identified by Trivy, ensuring
+        the systems comply with enterprise-grade security standards.</li>
+      <li>Refactored core modules and updated dependent libraries to optimize performance and ensure cross-version
+        compatibility post-migration.</li>
+      <li class="tech">Technologies: Angular 19, RxJS, TypeScript, Trivy.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="proj-name">XCORP Management System</span>
+      <span class="where">Sep 2022 - Aug 2025</span>
+    </div>
+    <ul>
+      <li>Developed the Frontend for a comprehensive ERP platform focusing on resource, project, and performance
+        management. Built complex modules such as Gantt charts for task management, OKR/KPI tracking, and automated
+        logwork systems.</li>
+      <li>Managed large-scale application states efficiently using NgRx and integrated Froala-based text editors for
+        document management.</li>
+      <li class="tech">Technologies: Angular 16, NgRx, TypeScript, Tailwind CSS, ng-zorro, Froala Editor.</li>
+      <li>Website: <a href="https://xcorp.app">xcorp.app</a></li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="proj-name">Skeleton-styler</span>
+      <span class="where">Sep 2025 - Nov 2025</span>
+    </div>
+    <ul>
+      <li>Authored and published an open-source npm library designed to simplify the creation of highly customizable
+        skeleton loaders, plus a companion visualizer for generating and exporting skeleton layouts.</li>
+      <li>Engineered a maintainable architecture that allows developers to integrate high-fidelity loading states with
+        minimal configuration.</li>
+      <li class="tech">Technologies: React, TypeScript, Tailwind CSS.</li>
+      <li>Package: <a href="https://www.npmjs.com/package/skeleton-styler">npmjs.com/package/skeleton-styler</a>
+        &nbsp;|&nbsp; Demo: <a href="https://skeleton-styler.vercel.app">skeleton-styler.vercel.app</a></li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="proj-name">Education System</span>
+      <span class="where">Dec 2024 - May 2025</span>
+    </div>
+    <ul>
+      <li>Built a Full-stack online learning platform featuring course moderation, enrollment systems, and an
+        AI-powered chatbot.</li>
+      <li>Integrated MoMo payment gateway and managed Big Data storage using Hadoop HDFS.</li>
+      <li class="tech">Technologies: Next.js, NestJS, PostgreSQL, Hadoop HDFS, LangChain, LLaMA 3.2, FAISS.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="proj-name">Other side projects</span>
+      <span class="where">2022 - 2026</span>
+    </div>
+    <ul>
+      <li><strong>English Master:</strong> vocabulary-learning app with flashcards, spaced repetition and note-taking
+        (ReactJS, Redux Toolkit, Tailwind CSS) -
+        <a href="https://niz-vocabulary.vercel.app">niz-vocabulary.vercel.app</a></li>
+      <li><strong>Diary Calendar:</strong> Vietnamese perpetual calendar (1900 - 2100) with lunar - solar conversion and
+        an integrated personal diary (Next.js, TypeScript, Tailwind CSS) -
+        <a href="https://viet-cal.vercel.app">viet-cal.vercel.app</a></li>
+      <li><strong>Wallio - Expense Manager:</strong> personal finance tracker with multi-wallet management, budgets and
+        chart-based analytics (React, Redux, Chart.js) -
+        <a href="https://wallio-app.vercel.app">wallio-app.vercel.app</a></li>
+      <li><strong>Go Travel Planner:</strong> trip itinerary planner with timeline view, checklists and map integration
+        (React, Redux, Google Maps API) -
+        <a href="https://go-travel-planner.vercel.app">go-travel-planner.vercel.app</a></li>
+      <li><strong>Simple blog:</strong> full-stack blog platform built during the internship at Designveloper
+        (ReactJS, ExpressJS, MongoDB).</li>
+    </ul>
+  </div>
+
+</section>
+
+</body>
+</html>

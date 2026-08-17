@@ -1,4 +1,4 @@
-import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
 import { Reveal } from "@/components/ui/reveal";
 import { personalInfo } from "@/lib/data/personalInfo";
 
@@ -37,6 +37,18 @@ export function ContactInfo() {
           </Reveal>
         );
       })}
+
+      <Reveal delay={items.length * 70} className="glass glass-card rounded-2xl p-5">
+        <a href={personalInfo.resumeUrl} download={personalInfo.resumeFileName} className="flex items-center gap-4">
+          <span className="glass flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-primary">
+            <FiDownload size={17} />
+          </span>
+          <div className="min-w-0">
+            <p className="text-xs uppercase tracking-wide text-muted">Resume</p>
+            <p className="truncate text-sm font-semibold text-foreground">{personalInfo.cta.resume} (PDF)</p>
+          </div>
+        </a>
+      </Reveal>
     </div>
   );
 }
